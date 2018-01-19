@@ -2,7 +2,7 @@
 
 冲顶大赛答题助手。回答正确率高于50%。!^_^
 
-![Aaron Swartz](https://raw.githubusercontent.com/smshen/MarkdownPhotos/master/Res/test.jpg)
+![Aaron Swartz](https://raw.githubusercontent.com/zealot2002/answer/master/src/screenshot/answer.png)
 
 1，包含完整的workflow。
 2，搜索策略：根据问题+选项进行百度搜索，取条目最多的选项作为正确答案。
