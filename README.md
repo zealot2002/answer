@@ -1,6 +1,7 @@
 # answer
 
 冲顶大赛答题助手。回答正确率高于50%。!^_^
+![Alt text](C:/Users/dell-7020/Desktop/answer.png)
 
 1，包含完整的workflow。
 2，搜索策略：根据问题+选项进行百度搜索，取条目最多的选项作为正确答案。
