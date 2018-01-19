@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.image.ImageView?>
+<AnchorPane
+        fx:controller="view.MainController"
+        xmlns:fx="http://javafx.com/fxml"
+        id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity"
+        minHeight="-Infinity" minWidth="-Infinity" prefHeight="600"
+        prefWidth="1360"
+>
+    <children>
+        <Text
+              layoutX="20.0"
+              layoutY="20.0"
+              text="截屏"/>
+
+        <ImageView fx:id="ivScreenShot"
+                   layoutX="20.0"
+                   layoutY="40.0"
+                   fitWidth="240"
+                   fitHeight="400"
+                   />
+        <Text
+                layoutX="300.0"
+                layoutY="20.0"
+                text="切割"/>
+
+        <ImageView fx:id="ivQShot"
+                   layoutX="300.0"
+                   layoutY="40.0"
+                   fitWidth="240"
+                   fitHeight="180"
+        />
+        <Text
+                layoutX="600.0"
+                layoutY="20.0"
+                text="识别"/>
+
+        <TextArea fx:id="taQuestion"
+                   layoutX="600.0"
+                   layoutY="40.0"
+                  maxWidth="240"
+                  maxHeight="300"
+        />
+
+        <Text
+                layoutX="900.0"
+                layoutY="20.0"
+                text="搜索"/>
+        <ListView
+                fx:id="listView"
+                layoutX="900.0"
+                layoutY="40.0"
+                prefHeight="280.0"
+                prefWidth="160.0"
+        />
+
+        <Text
+                layoutX="1100.0"
+                layoutY="20.0"
+                text="答案"/>
+
+        <TextArea fx:id="taAnswer"
+                  layoutX="1100.0"
+                  layoutY="40.0"
+                  maxWidth="200"
+                  maxHeight="100"
+        />
+
+
+
+        <Button fx:id="btnStart"
+                layoutX="500.0"
+                layoutY="550.0"
+                prefHeight="34.0"
+                prefWidth="228.0"
+                text="开始" />
+
+        <Text fx:id="tvTime"
+                layoutX="750.0"
+                layoutY="570.0"
+                text=""/>
+
+        <Text
+              layoutX="20.0"
+              layoutY="520.0"
+              text="当前状态:"/>
+
+        <Text fx:id="tvState"
+              layoutX="80"
+              layoutY="520.0"
+              text=""/>
+
+    </children>
+</AnchorPane>
