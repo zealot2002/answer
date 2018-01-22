@@ -33,15 +33,17 @@ public class OcrProxy {
         for(int i=0;i<wordArray.length();i++){
             JSONObject object = wordArray.getJSONObject(i);
             String s = object.getString("words");
-            if(i==0){
-                wordList.add(s.substring(1));//去掉题号
-            }else{
-                if(s.startsWith("A.")
-                        ||s.startsWith("B.")
-                        ||s.startsWith("C.")
-                        ){
+
+            if(i>0){
+                StringBuilder sb = new StringBuilder(wordList.get(0));
+                if(!sb.toString().endsWith("?")) {
+                    sb.append(s);
+                    wordList.set(0, sb.toString());
+                }else{
                     wordList.add(s);
                 }
+            }else{
+                wordList.add(s);
             }
         }
         if(callback!=null){

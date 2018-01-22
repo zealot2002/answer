@@ -3,6 +3,9 @@ package model;
 public class Task implements Runnable {
     public int index;
 
+    public Task(){
+    }
+
     public Task(int index){
         this.index = index;
     }
